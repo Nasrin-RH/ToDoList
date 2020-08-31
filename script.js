@@ -85,7 +85,7 @@ form.addEventListener('submit', event => {
 
  
   const text = input.value.trim();
- var regx=/^[a-zA-Z]/;
+  var regx=/^[a-zA-Z]/;
   if (text !== '' ) {
     if(regx.test(text)) {
     addTodo(text);
@@ -100,6 +100,7 @@ form.addEventListener('submit', event => {
   }
 }
 });
+
 
 const list = document.querySelector('.js-todo-list');
 list.addEventListener('click', event => {
@@ -123,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 });
+
+
+
 
 
 
