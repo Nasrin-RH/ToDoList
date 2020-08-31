@@ -95,6 +95,8 @@ form.addEventListener('submit', event => {
   else
   {
    alert("input starts with letter");
+      input.value='';
+      input.focus();
   }
 }
 });
