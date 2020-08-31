@@ -85,7 +85,8 @@ form.addEventListener('submit', event => {
 
  
   const text = input.value.trim();
-  if (text !== '') {
+ var regx=/^[a-zA-Z]/;
+  if (text !== '' && regx.test(text)) {
     addTodo(text);
     input.value = '';
     input.focus();
