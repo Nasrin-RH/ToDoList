@@ -86,11 +86,17 @@ form.addEventListener('submit', event => {
  
   const text = input.value.trim();
  var regx=/^[a-zA-Z]/;
-  if (text !== '' && regx.test(text)) {
+  if (text !== '' ) {
+    if(regx.test(text)) {
     addTodo(text);
     input.value = '';
     input.focus();
   }
+  else
+  {
+   alert("input starts with letter");
+  }
+}
 });
 
 const list = document.querySelector('.js-todo-list');
